@@ -3,7 +3,7 @@
 export default function Navbar() {
   return (
     <header className="py-[30px] px-1">
-      <div className="wrapper flex justify-between items-center">
+      <div className=" container wrapper flex justify-between items-center">
         <div className="left flex gap-1 items center">
           <img src="/logo.png" alt="logo" />
           <span className="pt-2 text-[20px] font-bold">brand name</span>

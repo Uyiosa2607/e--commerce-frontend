@@ -1,5 +1,4 @@
 import type { Config } from "tailwindcss";
-const { fontFamily } = require("tailwindcss/defaultTheme");
 
 const config = {
   darkMode: ["class"],
@@ -54,7 +53,7 @@ const config = {
           foreground: "hsl(var(--card-foreground))",
         },
         fontFamily: {
-          sans: ["var(--font-sans)", ...fontFamily.sans],
+          Martian: <any>["Martian Mono", "sans-serif"],
         },
       },
       borderRadius: {
