@@ -2,7 +2,7 @@
 
 export default function Navbar() {
   return (
-    <header className="py-[30px] px-1">
+    <header className="py-[30px] px-1 fixed w-full bg-white">
       <div className=" container wrapper flex justify-between items-center">
         <div className="left flex gap-1 items center">
           <img src="/logo.png" alt="logo" />
