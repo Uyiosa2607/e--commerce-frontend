@@ -33,7 +33,7 @@ export default function Home() {
         </section>
         <section className="py-[30px] bg-gray-100">
           <div className="container">
-            <div className="uppercase text-[10px]  justify-between mx-auto flex items-center">
+            <div className="uppercase text-[14px]  justify-between mx-auto flex items-center">
               <span className="flex gap-1 items-center">
                 <img src="/cafe.png" alt="cafe" />
                 <p>450+ kind of losef tea</p>
@@ -52,7 +52,7 @@ export default function Home() {
               </span>
             </div>
             <div className="w-[100%] flex justify-center items-center">
-              <button className="w-fit py-3 px-12 mt-[40px] border-[1px] font-medium border-black uppercase">
+              <button className="w-fit py-3 px-12 mt-[40px] border-[1px] text-[14px] font-medium border-black uppercase">
                 learn more
               </button>
             </div>

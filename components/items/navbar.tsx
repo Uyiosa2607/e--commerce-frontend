@@ -2,11 +2,11 @@
 
 export default function Navbar() {
   return (
-    <header className="py-[30px] px-1 fixed w-full bg-white">
+    <header className="py-[30px] left-0 top-0 px-1 sticky w-full bg-white">
       <div className=" container wrapper flex justify-between items-center">
         <div className="left flex gap-1 items center">
           <img src="/logo.png" alt="logo" />
-          <span className="pt-2 text-[20px] font-bold">brand name</span>
+          <span className="pt-1 text-[20px] font-bold">brand name</span>
         </div>
         <div className="middle text-[14px] font-medium uppercase flex gap-[30px] items-center">
           <p>tea collection</p>
