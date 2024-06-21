@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Navbar from "@/components/items/navbar";
+import Footer from "@/components/items/footer";
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
           />
           <div className="flex-1 flex items-center justify-center">
             <div className="pl-[100px] flex justify-center flex-col gap-6">
-              <h3 className="text-[30px] font-bold">
+              <h3 className="text-[30px] font-bold uppercase">
                 Everyday is unique just like our tea
               </h3>
               <p className="w-[70%] text-[16px]">
@@ -162,7 +163,7 @@ export default function Home() {
         </section>
         <section className="bg-gray-100 py-[20px] mb-[20px]">
           <div className="container">
-            <h2 className="font-bold text-[30px] font font-['Martian'] text-center capitalize m-[40px]">
+            <h2 className="font-bold text-[20px] text-center uppercase m-[40px]">
               {" "}
               last blog post
             </h2>
@@ -214,7 +215,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="container h-[600px] flex gap-3">
+        <section className="container h-[600px] flex gap-3 mb-[40px]">
           <div className="flex-1 flex justify-center flex-col">
             <h2>for wholesalers</h2>
             <p>
@@ -228,6 +229,7 @@ export default function Home() {
           <img className="flex-1 w-[600px]" src="/tea-bag.png" alt="tea bags" />
         </section>
       </main>
+      <Footer />
     </>
   );
 }

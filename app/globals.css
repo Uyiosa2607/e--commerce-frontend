@@ -15,11 +15,6 @@
     color: #1C1B1F;
   }
 
-  @font-face {
-    font-family: "Martian";
-    src: url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap') ;
-  }
-
   @layer base {
     :root {
       --background: 0 0% 100%;

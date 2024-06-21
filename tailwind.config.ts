@@ -52,9 +52,7 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        fontFamily: {
-          Martian: <any>["Martian Mono", "sans-serif"],
-        },
+        fontFamily: {},
       },
       borderRadius: {
         lg: "var(--radius)",
