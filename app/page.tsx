@@ -3,6 +3,54 @@ import Navbar from "@/components/items/navbar";
 import Footer from "@/components/items/footer";
 
 export default function Home() {
+  const teaCollection = [
+    {
+      name: "black tea",
+      image: "/black-tea.png",
+      id: 1,
+    },
+    {
+      name: "green tea",
+      image: "/green-tea.png",
+      id: 2,
+    },
+    {
+      name: "white tea",
+      image: "/white-tea.png",
+      id: 3,
+    },
+    {
+      name: "matcha",
+      image: "/matcha.png",
+      id: 4,
+    },
+    {
+      name: "herbal tea",
+      image: "/herbal-tea.png",
+      id: 5,
+    },
+    {
+      name: "chai",
+      image: "/chai-tea.png",
+      id: 6,
+    },
+    {
+      name: "oolong",
+      image: "/oolong-tea.png",
+      id: 7,
+    },
+    {
+      name: "rooibos",
+      image: "/rooibos.png",
+      id: 8,
+    },
+    {
+      name: "teaware",
+      image: "/teaware.png",
+      id: 9,
+    },
+  ];
+
   return (
     <>
       <main className="w-full">
@@ -62,103 +110,19 @@ export default function Home() {
           <h2 className="text-center my-[40px] text-[30px] uppercase">
             our collections
           </h2>
-          <div className="text-[16px] mt-[10px] font-medium img-wrapper justify-between flex items-center uppercase mb-[10px]">
-            <div>
-              <img
-                className="w-[360px] h-[360px]"
-                src="/black-tea.png"
-                alt="black tea"
-              />
-              <p className="text-center py-[10px]">black tea</p>
-            </div>
-
-            <div className="img-wrapper">
-              <div>
-                <img
-                  className="w-[360px] h-[360px]"
-                  src="/green-tea.png"
-                  alt="green tea"
-                />
-                <p className="text-center py-[10px]">black tea</p>
+          <div className="grid grid-cols-3 gap-5 mb-[50px]">
+            {teaCollection.map((tea) => (
+              <div key={tea.id} className="img-wrapper text-[16px]">
+                <div className="flex flex-col items-center justify-center">
+                  <img
+                    className="w-[360px] h-[360px]"
+                    src={tea.image}
+                    alt={tea.name}
+                  />
+                  <p className="text-center uppercase py-[10px]">{tea.name}</p>
+                </div>
               </div>
-            </div>
-
-            <div className="img-wrapper">
-              <div>
-                <img
-                  className="w-[360px] h-[360px]"
-                  src="/white-tea.png"
-                  alt="white tea"
-                />
-                <p className="text-center py-[10px]">white tea</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="text-[16px] mt-[10px] font-mediumimg-wrapper justify-between flex items-center uppercase mb-[10px]">
-            <div>
-              <img
-                className="w-[360px] h-[360px]"
-                src="/matcha.png"
-                alt="matcha"
-              />
-              <p className="text-center py-[10px]">matcha</p>
-            </div>
-
-            <div className="img-wrapper">
-              <div>
-                <img
-                  className="w-[360px] h-[360px]"
-                  src="/herbal-tea.png"
-                  alt="herbal tea"
-                />
-                <p className="text-center py-[10px]">herbal tea</p>
-              </div>
-            </div>
-
-            <div className="img-wrapper">
-              <div>
-                <img
-                  className="w-[360px] h-[360px]"
-                  src="/chai-tea.png"
-                  alt="chai"
-                />
-                <p className="text-center py-[10px]">chai</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="text-[16px] font-medium img-wrapper  justify-between mx-auto flex items-center uppercase mb-[10px]">
-            <div>
-              <img
-                className="w-[360px] h-[360px]"
-                src="/oolong-tea.png"
-                alt="oolong"
-              />
-              <p className="text-center py-[10px]">oolong</p>
-            </div>
-
-            <div className="img-wrapper">
-              <div>
-                <img
-                  className="w-[360px] h-[360px]"
-                  src="/rooibos.png"
-                  alt="rooibos"
-                />
-                <p className="text-center py-[10px]">rooibos</p>
-              </div>
-            </div>
-
-            <div className="img-wrapper">
-              <div>
-                <img
-                  className="w-[360px] h-[360px]"
-                  src="/teaware.png"
-                  alt="chai"
-                />
-                <p className="text-center py-[10px]">teaware</p>
-              </div>
-            </div>
+            ))}
           </div>
         </section>
         <section className="bg-gray-100 py-[20px] mb-[20px]">

@@ -225,7 +225,7 @@ export default function Collection() {
                         </span>
                       </summary>
 
-                      <ul className="flex gap-1 flex-col mb-3 px-4">
+                      <ul className="flex gap-1 flex-col mb-3 px-2">
                         <li className="flex gap-1">
                           <input type="checkbox" />
                           <a href="#" className="text-sm font-medium">
