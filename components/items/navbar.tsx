@@ -1,4 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
+import {
+  MdOutlinePersonOutline,
+  MdOutlineSearch,
+  MdOutlineShoppingBag,
+} from "react-icons/md";
 
 export default function Navbar() {
   return (
@@ -14,10 +19,10 @@ export default function Navbar() {
           <p>blog</p>
           <p>contact us</p>
         </div>
-        <div className="right flex gap-[20px] items-center">
-          <img src="/search.png" alt="search" />
-          <img src="/person.png" alt="person" />
-          <img src="/local_mall.png" alt="cart" />
+        <div className="right  text-[24px] flex gap-[20px] items-center">
+          <MdOutlineSearch />
+          <MdOutlinePersonOutline />
+          <MdOutlineShoppingBag />
         </div>
       </div>
     </header>
