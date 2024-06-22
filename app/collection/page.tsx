@@ -16,28 +16,28 @@ export default function Collection() {
       name: "celon ginger",
       desc: "cinamon chai tea",
       img: "/tea-2.png",
-      prize: "80",
+      prize: "12",
       id: 2,
     },
     {
       name: "celon ginger",
       desc: "cinamon chai tea",
       img: "/tea-3.png",
-      prize: "80",
+      prize: "4.85",
       id: 3,
     },
     {
       name: "celon ginger",
       desc: "cinamon chai tea",
       img: "/tea-4.png",
-      prize: "80",
+      prize: "20",
       id: 4,
     },
     {
       name: "celon ginger",
       desc: "cinamon chai tea",
       img: "/tea-5.png",
-      prize: "80",
+      prize: "3.12",
       id: 5,
     },
     {
@@ -278,12 +278,23 @@ export default function Collection() {
           </div>
           <div className="grid py-[80px] grid-cols-3 w-full gap-y-6 gap-x-[160px]">
             {teas.map((tea) => (
-              <div key={tea.id}>
+              <div
+                className="flex flex-col items-center justify-center"
+                key={tea.id}
+              >
                 <img
                   className="w-[264px] h-[264px]"
                   src={tea.img}
                   alt={tea.desc}
                 />
+                <div className="flex flex-col capitalize font-light text-center text-[14px] py-1">
+                  <span>{tea.name}</span>
+                  <span>{tea.desc}</span>
+                  <span className="mt-2">
+                    <b>{`$${tea.prize} `}</b>
+                    /50g
+                  </span>
+                </div>
               </div>
             ))}
           </div>
