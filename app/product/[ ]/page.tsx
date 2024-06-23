@@ -10,6 +10,9 @@ import {
 } from "react-icons/fa";
 import { LiaShoppingBagSolid } from "react-icons/lia";
 import { MdOutlineShoppingBag } from "react-icons/md";
+import { SlCup } from "react-icons/sl";
+import { PiBowlSteam } from "react-icons/pi";
+import { LuAlarmClock } from "react-icons/lu";
 
 export default function Product() {
   return (
@@ -81,8 +84,69 @@ export default function Product() {
           </div>
         </div>
       </section>
-      <section className="bg-gray-100">
-        <div className="container"></div>
+      <section className="w-full">
+        <div className="container py-[20px] flex gap-3 text-[14px]">
+          <div className="flex-1">
+            <p className="text-[32px] font-medium mb-[10px]">
+              Steeping instructions
+            </p>
+            <span className="flex gap-1 items-center">
+              <SlCup />
+              <p>
+                <b className="uppercase font-medium">serving size:</b> 2 tsp per
+                cup
+              </p>
+            </span>
+            <span className="flex gap-1 items-center">
+              <PiBowlSteam />
+              <p>
+                <b className="uppercase font-medium">water temparature:</b> 100C
+              </p>
+            </span>
+            <span className="flex gap-1 items-center">
+              <LuAlarmClock />
+              <p>
+                <b className="font-medium uppercase">steeping time:</b>3 - 5
+                minutes
+              </p>
+            </span>
+            <span className="flex gap-1 items-center">
+              <p>
+                <b className="uppercase font-medium">color after 3 minutes</b>
+              </p>
+            </span>
+          </div>
+
+          <div className="flex-1">
+            <p>about this tea</p>
+            <span className="flex w-full items-center justify-between my-[20px]">
+              <span className="flex flex-col gap-2">
+                <p className="uppercase">flavour</p>
+                <p>spicy</p>
+              </span>
+              <span className="flex flex-col gap-2">
+                <p className="uppercase">qaulites</p>
+                <p>sooting</p>
+              </span>
+              <span className="flex flex-col gap-2">
+                <p className="uppercase">caffaine</p>
+                <p>medium</p>
+              </span>
+              <span className="flex flex-col gap-2">
+                <p className="uppercase">allergens</p>
+                <p>Nuts-free</p>
+              </span>
+            </span>
+
+            <div>
+              <h4 className="capitalize mb-[10px]">ingredients</h4>
+              <p>
+                Black Ceylon tea, Green tea, Ginger root, Cloves, Black pepper,
+                Cinnamon sticks, Cardamom, Cinnamon pieces.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
       <Footer />
     </main>
