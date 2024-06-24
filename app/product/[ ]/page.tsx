@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Footer from "@/components/items/footer";
-import Navbar from "@/components/items/navbar";
+
 import {
   FaGlobe,
   FaShoppingBag,
@@ -18,7 +18,6 @@ import AdsCard from "@/components/items/AdsCard";
 export default function Product() {
   return (
     <main>
-      <Navbar />
       <section className="container flex">
         <div className="flex-1">
           <img

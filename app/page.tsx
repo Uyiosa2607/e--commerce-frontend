@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import Navbar from "@/components/items/navbar";
+
 import Footer from "@/components/items/footer";
 
 export default function Home() {
@@ -54,7 +54,6 @@ export default function Home() {
   return (
     <>
       <main className="w-full">
-        <Navbar />
         <section className="container flex h-[600px] mb-[50px]">
           <img
             className="object-cover flex-1 h-auto w-full"

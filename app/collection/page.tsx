@@ -1,7 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
-import Navbar from "@/components/items/navbar";
+
 import Footer from "@/components/items/footer";
 import { FaPlus } from "react-icons/fa6";
+import Link from "next/link";
 
 export default function Collection() {
   const teas = [
@@ -51,7 +52,6 @@ export default function Collection() {
 
   return (
     <>
-      <Navbar />
       <section>
         <img
           className="h-[308px] w-full object-cover"
@@ -278,24 +278,23 @@ export default function Collection() {
           </div>
           <div className="grid py-[80px] grid-cols-3 w-full gap-y-6 gap-x-[160px]">
             {teas.map((tea) => (
-              <div
-                className="flex flex-col items-center justify-center"
-                key={tea.id}
-              >
-                <img
-                  className="w-[264px] h-[264px]"
-                  src={tea.img}
-                  alt={tea.desc}
-                />
-                <div className="flex flex-col capitalize font-light text-center text-[14px] py-1">
-                  <span>{tea.name}</span>
-                  <span>{tea.desc}</span>
-                  <span className="mt-2">
-                    <b>{`$${tea.prize} `}</b>
-                    /50g
-                  </span>
+              <Link key={tea.id} href="/product/id">
+                <div className="flex flex-col items-center justify-center">
+                  <img
+                    className="w-[264px] h-[264px]"
+                    src={tea.img}
+                    alt={tea.desc}
+                  />
+                  <div className="flex flex-col capitalize font-light text-center text-[14px] py-1">
+                    <span>{tea.name}</span>
+                    <span>{tea.desc}</span>
+                    <span className="mt-2">
+                      <b>{`$${tea.prize} `}</b>
+                      /50g
+                    </span>
+                  </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

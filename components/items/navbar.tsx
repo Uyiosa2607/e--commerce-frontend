@@ -34,7 +34,9 @@ export default function Navbar() {
         <div className="right  text-[24px] flex gap-[20px] items-center">
           <MdOutlineSearch className="cursor-pointer" />
           <MdOutlinePersonOutline className="cursor-pointer" />
-          <MdOutlineShoppingBag className="cursor-pointer" />
+          <Link href="/proceed">
+            <MdOutlineShoppingBag className="cursor-pointer" />
+          </Link>
         </div>
       </div>
     </header>
