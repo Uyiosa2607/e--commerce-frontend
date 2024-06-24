@@ -13,6 +13,7 @@
     font-family: "Montserrat", sans-serif;
     font-size: 62.50%;
     color: #1C1B1F;
+    font-weight: 400;
   }
 
   @layer base {
