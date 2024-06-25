@@ -1,33 +1,33 @@
 /* eslint-disable @next/next/no-img-element */
-export default function AdsCard() {
-  const collections = [
-    {
-      name: "celon ginger",
-      desc: "cinamon chai tea",
-      img: "/tea-1.png",
-      prize: "80",
-      id: 1,
-    },
-    {
-      name: "celon ginger",
-      desc: "cinamon chai tea",
-      img: "/tea-2.png",
-      prize: "12",
-      id: 2,
-    },
-    {
-      name: "celon ginger",
-      desc: "cinamon chai tea",
-      img: "/tea-3.png",
-      prize: "4.85",
-      id: 3,
-    },
-  ];
+const collections = [
+  {
+    name: "celon ginger",
+    desc: "cinamon chai tea",
+    img: "/tea-1.png",
+    prize: "80",
+    id: 1,
+  },
+  {
+    name: "celon ginger",
+    desc: "cinamon chai tea",
+    img: "/tea-2.png",
+    prize: "12",
+    id: 2,
+  },
+  {
+    name: "celon ginger",
+    desc: "cinamon chai tea",
+    img: "/tea-3.png",
+    prize: "4.85",
+    id: 3,
+  },
+];
 
+export default function AdsCard(props: any) {
   return (
     <section className="container mb-[100px] mt-[180px]">
       <h4 className="font-semibold text-center text-[28px] mb-[40px]">
-        You may also like
+        {props.title}
       </h4>
       <div className="w-full flex items-center justify-center">
         {collections.map((tea) => (
@@ -50,3 +50,5 @@ export default function AdsCard() {
     </section>
   );
 }
+
+export { collections };

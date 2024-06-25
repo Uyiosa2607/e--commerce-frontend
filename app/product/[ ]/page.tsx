@@ -164,7 +164,7 @@ export default function Product() {
         </div>
       </section>
 
-      <AdsCard />
+      <AdsCard title="you may also like" />
 
       <Footer />
     </main>
