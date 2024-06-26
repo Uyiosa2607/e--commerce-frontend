@@ -1,6 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-import Footer from "@/components/items/footer";
-
 import {
   FaGlobe,
   FaShoppingBag,
@@ -8,7 +6,6 @@ import {
   FaPlus,
   FaMinus,
 } from "react-icons/fa";
-import { TbPaperBag } from "react-icons/tb";
 import { MdOutlineShoppingBag } from "react-icons/md";
 import { SlCup } from "react-icons/sl";
 import { PiBowlSteam } from "react-icons/pi";
@@ -21,7 +18,7 @@ export default function Product() {
       <section className="container flex">
         <div className="flex-1">
           <img
-            className="w-[456px] h-[507px] object-cover"
+            className="w-[560px] h-[507px]"
             src="/product-image.png"
             alt="product image"
           />
@@ -51,24 +48,33 @@ export default function Product() {
             €3.90
           </span>
           <div className="pt-4">
-            <span className="text-sm mb-[8px]">variants</span>
-            <div className="flex items-center my-1 justify-between text-[50px] w-[70%]">
-              <span className="flex flex-col gap-1">
-                <TbPaperBag />
-                <span className="text-sm">100g bag</span>
-              </span>
-              <span className="flex flex-col gap-1">
-                <TbPaperBag />
-                <span className="text-sm">10g bag</span>
-              </span>
-              <span className="flex flex-col gap-1">
-                <TbPaperBag />
-                <span className="text-sm">20g bag</span>
-              </span>
-              <span className="flex flex-col gap-1">
-                <TbPaperBag />
-                <span className="text-sm">70g bag</span>
-              </span>
+            <span className="text-sm font-bold mb-[5px]">variants</span>
+            <div className="flex items-center my-2 justify-between text-[50px] w-[80%]">
+              <img
+                className="w-[84px] h-[100px]"
+                src="/tea-bag-icon.png"
+                alt="tea bag 100g icon"
+              />
+              <img
+                className="w-[84px] h-[100px]"
+                src="/tea-bag-icon.png"
+                alt="tea bag 100g icon"
+              />
+              <img
+                className="w-[84px] h-[100px]"
+                src="/tea-bag-icon.png"
+                alt="tea bag 100g icon"
+              />
+              <img
+                className="w-[84px] h-[100px]"
+                src="/tea-bag-icon.png"
+                alt="tea bag 100g icon"
+              />
+              <img
+                className="w-[84px] h-[100px]"
+                src="/tea-bag-icon.png"
+                alt="tea bag 100g icon"
+              />
             </div>
             <div className="flex gap-6 text-[14px] mt-[50px] bottom-2">
               <span className="flex items-center gap-2">
@@ -163,10 +169,7 @@ export default function Product() {
           </div>
         </div>
       </section>
-
       <AdsCard title="you may also like" />
-
-      <Footer />
     </main>
   );
 }

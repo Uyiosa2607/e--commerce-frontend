@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-import Footer from "@/components/items/footer";
 import { collections } from "@/components/items/AdsCard";
-import { FaPlus, FaMinus } from "react-icons/fa6";
+import { FaPlus, FaMinus, FaAngleRight } from "react-icons/fa6";
 import AdsCard from "@/components/items/AdsCard";
 
 export default function Proceed() {
@@ -71,10 +70,40 @@ export default function Proceed() {
               checkout
             </button>
           </div>
+          <div className="mt-[50px] w-[80%] mx-auto p-5 bg-gray-100">
+            <p className="mb-[20px]">Payment type</p>
+            <span className="flex justify-between items-center">
+              <img className="w-[48px] h-[32px]" src="/card-1.png" alt="card" />
+              <img className="w-[48px] h-[32px]" src="/card-2.png" alt="card" />
+              <img className="w-[48px] h-[32px]" src="/card-3.png" alt="card" />
+              <img className="w-[48px] h-[32px]" src="/card-4.png" alt="card" />
+              <img className="w-[48px] h-[32px]" src="/card-5.png" alt="card" />
+            </span>
+          </div>
+          <div className="mt-[50px] w-[80%] mx-auto p-5 bg-gray-100">
+            <p className="mb-[20px]">Delivery and retour</p>
+            <div className="flex flex-col gap-6">
+              <span className="flex gap-2 items-center">
+                <FaAngleRight />
+                <p>Order before 12:00 and we will ship the same day.</p>
+              </span>
+              <span className="flex gap-2 items-center">
+                <FaAngleRight />
+                <p>Orders made after Friday 12:00 are processed on Monday.</p>
+              </span>
+              <span className="flex gap-2 items-center">
+                <FaAngleRight />
+                <p>To return your articles, please contact us first.</p>
+              </span>
+              <span className="flex gap-2 items-center">
+                <FaAngleRight />
+                <p>Postal charges for retour are not reimbursed.</p>
+              </span>
+            </div>
+          </div>
         </div>
       </section>
       <AdsCard title="Popular this season" />
-      <Footer />
     </main>
   );
 }

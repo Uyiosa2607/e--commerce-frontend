@@ -1,6 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-
-import Footer from "@/components/items/footer";
 import { FaPlus } from "react-icons/fa6";
 import Link from "next/link";
 
@@ -299,7 +297,6 @@ export default function Collection() {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 }
