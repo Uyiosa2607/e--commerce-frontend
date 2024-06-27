@@ -15,33 +15,40 @@ export default function Delivery() {
               <h4 className="text-[16px] mb-[15px]">Shipping Address</h4>
               <form className="w-[289px]">
                 <input
-                  className="block mb-[20px] w-full p-[10px] border-[1px] border-black"
+                  className="block mb-[20px] w-full p-[10px] border-[1px] border-gray-400"
                   placeholder="First Name"
                   type="text"
                 />
                 <input
-                  className="block mb-[20px] w-full p-[10px] border-[1px] border-black"
+                  className="block mb-[20px] w-full p-[10px] border-[1px] border-gray-400"
                   placeholder="Last Name"
                   type="text"
                 />
                 <input
-                  className="block mb-[20px] w-full p-[10px] border-[1px] border-black"
+                  className="block mb-[20px] w-full p-[10px] border-[1px] border-gray-400"
                   placeholder="Street"
                   type="text"
                 />
                 <span className="flex justify-between gap-4 mb-[20px] items-center">
                   <input
-                    className="border-[1px] p-[10px] w-[50%] border-black"
+                    className="p-[10px] w-[50%] border-[1px] border-gray-400"
                     placeholder="Postcode"
                     type="text"
                   />
                   <input
-                    className="border-[1px] p-[10px] w-[50%] border-black"
+                    className="p-[10px] w-[50%] border-[1px] border-gray-400"
                     placeholder="City"
                     type="text"
                   />
                 </span>
-                <select name="" id=""></select>
+                <select
+                  className="w-full p-[10px] text-gray-400 border-[1px] border-gray-400"
+                  name=""
+                  id=""
+                >
+                  <option value="country">Country</option>
+                  <option value="#">Country</option>
+                </select>
               </form>
             </div>
           </div>
