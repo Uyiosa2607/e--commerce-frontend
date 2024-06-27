@@ -1,4 +1,5 @@
 import { FaAngleRight } from "react-icons/fa6";
+import Link from "next/link";
 
 export default function Account() {
   return (
@@ -55,16 +56,20 @@ export default function Account() {
                   <p>Get a 10% discount for new customer</p>
                 </span>
               </div>
-              <button className="uppercase w-full mt-[40px] py-[12px] border-[1px] border-black">
-                create an account
-              </button>
+              <Link href="/delivery">
+                <button className="uppercase w-full mt-[40px] py-[12px] border-[1px] border-black">
+                  create an account
+                </button>
+              </Link>
             </div>
             <div className="mt-[60px] w-[480px] mx-auto p-5 bg-gray-100">
               <h4 className="text-[16px] mb-[10px]">Guest checkout</h4>
               <p>Not ready to become a customer?</p>
-              <button className="uppercase mt-[30px] w-full py-[12px] border-[1px] border-black">
-                checkout as Guest
-              </button>
+              <Link href="/delivery">
+                <button className="uppercase mt-[30px] w-full py-[12px] border-[1px] border-black">
+                  checkout as Guest
+                </button>
+              </Link>
             </div>
           </div>
         </div>

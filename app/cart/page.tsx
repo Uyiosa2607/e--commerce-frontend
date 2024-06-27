@@ -2,6 +2,7 @@
 import { collections } from "@/components/items/AdsCard";
 import { FaPlus, FaMinus, FaAngleRight } from "react-icons/fa6";
 import AdsCard from "@/components/items/AdsCard";
+import Link from "next/link";
 
 export default function Proceed() {
   return (
@@ -40,9 +41,11 @@ export default function Proceed() {
             <p>€3.90</p>
           </span>
           <span className="w-[90%] flex items-cneter justify-center">
-            <button className="w-fit text-center py-2 px-6 uppercase border-[1px] border-black">
-              Back to shopping
-            </button>
+            <Link href="/collection">
+              <button className="w-fit text-center py-2 px-6 uppercase border-[1px] border-black">
+                Back to shopping
+              </button>
+            </Link>
           </span>
         </div>
         <div className="flex-1 text-[14px]">

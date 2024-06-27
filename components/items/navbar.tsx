@@ -33,8 +33,11 @@ export default function Navbar() {
         </div>
         <div className="right  text-[24px] flex gap-[20px] items-center">
           <MdOutlineSearch className="cursor-pointer" />
-          <MdOutlinePersonOutline className="cursor-pointer" />
-          <Link href="/proceed">
+          <Link href="/account">
+            {" "}
+            <MdOutlinePersonOutline className="cursor-pointer" />
+          </Link>
+          <Link href="/cart">
             <MdOutlineShoppingBag className="cursor-pointer" />
           </Link>
         </div>

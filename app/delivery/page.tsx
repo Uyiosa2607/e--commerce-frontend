@@ -33,7 +33,7 @@ export default function Delivery() {
                   <input
                     className="p-[10px] w-[50%] border-[1px] border-gray-400"
                     placeholder="Postcode"
-                    type="text"
+                    type="number"
                   />
                   <input
                     className="p-[10px] w-[50%] border-[1px] border-gray-400"
