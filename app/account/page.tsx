@@ -5,7 +5,7 @@ export default function Account() {
   return (
     <main>
       <section className="container mb-[140px]">
-        <div className="flex gap-[40px] text-[14px]">
+        <div className="flex gap-[40px] text-[16px]">
           <div className="flex-1">
             <div className="p-5 w-fit bg-gray-100 mx-auto">
               <h4 className="text-[16px] mb-[10px]">Already a Customer?</h4>
@@ -30,7 +30,7 @@ export default function Account() {
                   </span>
                   <p>forget password?</p>
                 </span>
-                <button className="uppercase w-[456px] bg-black py-[12px] text-white">
+                <button className="uppercase w-[456px] text-[14px] bg-black py-[12px] text-white">
                   sign in
                 </button>
               </form>
@@ -40,7 +40,7 @@ export default function Account() {
             <div className="w-[480px] p-5 bg-gray-100 mx-auto">
               <h4 className="text-[16px] mb-[10px]">New to the company?</h4>
               <p className="mb-[15px] text-[15px]">
-                create an account for the best expirience
+                create an account for the best experience
               </p>
               <div className="flex ml-2 flex-col gap-4 mb-[10px]">
                 <span className="flex items-center gap-1">
@@ -57,7 +57,7 @@ export default function Account() {
                 </span>
               </div>
               <Link href="/delivery">
-                <button className="uppercase w-full mt-[40px] py-[12px] border-[1px] border-black">
+                <button className="uppercase w-full text-[14px] mt-[40px] py-[12px] border-[1px] border-black">
                   create an account
                 </button>
               </Link>
@@ -66,7 +66,7 @@ export default function Account() {
               <h4 className="text-[16px] mb-[10px]">Guest checkout</h4>
               <p>Not ready to become a customer?</p>
               <Link href="/delivery">
-                <button className="uppercase mt-[30px] w-full py-[12px] border-[1px] border-black">
+                <button className="uppercase text-[14px] mt-[30px] w-full py-[12px] border-[1px] border-black">
                   checkout as Guest
                 </button>
               </Link>
