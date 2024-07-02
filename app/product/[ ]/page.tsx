@@ -11,6 +11,7 @@ import { SlCup } from "react-icons/sl";
 import { PiBowlSteam } from "react-icons/pi";
 import { LuAlarmClock } from "react-icons/lu";
 import AdsCard from "@/components/items/AdsCard";
+import Link from "next/link";
 
 export default function Product() {
   return (
@@ -24,7 +25,7 @@ export default function Product() {
           />
         </div>
         <div className="flex-1 flex flex-col">
-          <h4 className="text-[30px] uppercase w-[70%] leading-tight">
+          <h4 className="text-[30px] capitalize font-[600] w-[70%] leading-tight">
             ceylon ginger cinamon chai tea
           </h4>
           <span className="text-[14px] mt-[15px]">
@@ -48,7 +49,7 @@ export default function Product() {
             €3.90
           </span>
           <div className="pt-4">
-            <span className="text-sm font-bold mb-[5px]">variants</span>
+            <span className="text-sm font-[500] mb-[5px]">variants</span>
             <div className="flex items-center my-2 justify-between text-[50px] w-[80%]">
               <img
                 className="w-[84px] h-[100px]"
@@ -130,37 +131,39 @@ export default function Product() {
           </div>
 
           <div className="flex-1">
-            <p className="capitalize text-[32px]">about this tea</p>
+            <p className="capitalize font-[500] text-[32px]">about this tea</p>
             <span className="flex w-full items-center gap-6 my-[20px]">
               <span className="flex flex-col gap-1">
-                <p className="uppercase font-semibold">flavour</p>
+                <p className="uppercase font-medium">flavour</p>
                 <p>spicy</p>
               </span>
 
               <span className="h-[40px] w-[1px] bg-gray-300"></span>
 
               <span className="flex flex-col gap-1">
-                <p className="uppercase font-semibold">qualities</p>
+                <p className="uppercase font-medium">qualities</p>
                 <p>sooting</p>
               </span>
 
               <span className="h-[40px] w-[1px] bg-gray-300"></span>
 
               <span className="flex flex-col gap-1">
-                <p className="uppercase font-semibold">caffaine</p>
+                <p className="uppercase font-medium">caffaine</p>
                 <p>medium</p>
               </span>
 
               <span className="h-[40px] w-[1px] bg-gray-300"></span>
 
               <span className="flex flex-col gap-1">
-                <p className="uppercase font-semibold">allergens</p>
+                <p className="uppercase font-medium">allergens</p>
                 <p>Nuts-free</p>
               </span>
             </span>
 
             <div>
-              <h4 className="capitalize mb-[10px] text-[32px]">ingredients</h4>
+              <h4 className="capitalize mb-[10px] font-[500] text-[32px]">
+                ingredients
+              </h4>
               <p>
                 Black Ceylon tea, Green tea, Ginger root, Cloves, Black pepper,
                 Cinnamon sticks, Cardamom, Cinnamon pieces.

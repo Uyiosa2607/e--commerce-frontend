@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Delivery() {
   return (
     <main>
@@ -92,9 +94,11 @@ export default function Delivery() {
             <p className="my-[12px] text-gray-500">
               Estimated shipping time: 2 days
             </p>
-            <button className="uppercase text-white mx-auto  mt-[30px] bg-black border-[1px] w-full py-2 px-6">
-              checkout
-            </button>
+            <Link href="/payment">
+              <button className="uppercase text-white mx-auto  mt-[30px] bg-black border-[1px] w-full py-2 px-6">
+                checkout
+              </button>
+            </Link>
           </div>
         </div>
       </section>

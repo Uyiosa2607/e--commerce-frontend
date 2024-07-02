@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Proceed() {
   return (
     <main>
-      <div className="text-gray-500 container flex justify-around items-center uppercase text-[16px]">
+      <div className="text-gray-500 container flex justify-between items-center uppercase text-[16px]">
         <p>1. my bag</p>
         <div className="w-[150px] h-[1px] bg-gray-300"></div>
         <p>2. delivery</p>
@@ -24,25 +24,25 @@ export default function Proceed() {
                   <p className="capitalize">ceylon ginger cinamon tea - 50g</p>
                   <p className="uppercase text-[12px]">remove</p>
                 </div>
-                <div className="flex flex-col gap-6">
-                  <span className="flex items-center gap-3">
+                <div className="flex flex-col gap-3">
+                  <div className="flex items-center gap-3">
                     <FaPlus />
-                    <span>1</span>
+                    <span className="text-[15px] font-[600]">1</span>
                     <FaMinus />
-                  </span>
-                  <p className="text-center">{tea.prize}€</p>
+                  </div>
+                  <p className="text-center font-[600]">€{tea.prize}</p>
                 </div>
               </div>
             </div>
           ))}
-          <div className="w-[90%] bg-gray-300 h-[2px] ml-[40px]"></div>
-          <span className="w-[90%] ml-[20px]  flex items-center justify-between">
+          <div className="w-[80%] bg-gray-300 h-[2px] mx-auto"></div>
+          <span className="w-[90%] ml-[20px] mx-auto  flex items-center justify-between">
             <p>Subtotal</p>
-            <p>€3.90</p>
+            <p className="font-[600]">€3.90</p>
           </span>
           <span className="w-[90%] flex items-cneter justify-center">
             <Link href="/collection">
-              <button className="w-fit text-center py-2 px-6 uppercase border-[1px] border-black">
+              <button className="mx-auto text-center py-2 px-6 uppercase border-[1px] border-black">
                 Back to shopping
               </button>
             </Link>
@@ -56,7 +56,7 @@ export default function Proceed() {
                 <p>Subtotal</p>
                 <p>Delivery</p>
               </span>
-              <span className="flex flex-col gap-5">
+              <span className="flex font-[600] flex-col gap-5">
                 <p>€3.90</p>
                 <p>€3.95</p>
               </span>
@@ -64,14 +64,16 @@ export default function Proceed() {
             <div className="w-[70%] my-[20px] mx-auto bg-gray-300 h-[2px] ml-[40px]"></div>
             <span className="flex items-center justify-between w-full">
               <p className="capitalize">Total</p>
-              <p>€7.95</p>
+              <p className="font-[600]">€7.95</p>
             </span>
             <p className="my-[12px] text-gray-500">
               Estimated shipping time: 2 days
             </p>
-            <button className="uppercase text-white mx-auto  mt-[30px] bg-black border-[1px] w-full py-2 px-6">
-              checkout
-            </button>
+            <Link href="/delivery">
+              <button className="uppercase text-white mx-auto  mt-[30px] bg-black border-[1px] w-full py-2 px-6">
+                checkout
+              </button>
+            </Link>
           </div>
           <div className="mt-[50px] w-[80%] mx-auto p-5 bg-gray-100">
             <p className="mb-[20px]">Payment type</p>

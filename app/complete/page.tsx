@@ -1,20 +1,21 @@
 /* eslint-disable @next/next/no-img-element */
 import { collections } from "@/components/items/AdsCard";
 import AdsCard from "@/components/items/AdsCard";
+import Link from "next/link";
 
 export default function Complete() {
   return (
     <main className="text-[16px]">
       <section className="container">
         <div className="mb-[30px]">
-          <h2 className="uppercase font-lobstar font-bold text-[32px] mb-[12px]  text-center">
+          <h2 className="uppercase font-[500] text-[32px] mb-[12px]  text-center">
             thank you
           </h2>
           <p className="text-center mb-[20px] w-[50%] mx-auto">
             We received your order and will start preparing your package right
             away. You will receive a confirmation email in a moment.
           </p>
-          <p className="text-center font-bold uppercase text-[18px]">
+          <p className="text-center font-[500] uppercase text-[18px]">
             Order details - 8972491047359
           </p>
         </div>
@@ -61,7 +62,7 @@ export default function Complete() {
               </div>
             </div>
           </div>
-          <div className="flex-1">
+          <div className="flex-1 ml-[50px]">
             <div className="mb-[30px]">
               <h4 className="text-[17px] font-[500] mb-[15px]">
                 Payment method
@@ -83,8 +84,8 @@ export default function Complete() {
       <section className="container">
         <div className="flex">
           <div className="flex-1">
-            <div className="bg-gray-100 w-[80%] h-fit py-[20px] px-[20px] mx-auto">
-              <div className="w-[70%] my-[20px] mx-auto bg-gray-300 h-[2px] ml-[40px]"></div>
+            <div className="w-[80%] h-fit py-[20px] px-[20px] mx-auto">
+              <div className="w-[80%] my-[20px] mx-auto bg-gray-300 h-[2px]"></div>
               <div className="w-full flex items-center justify-between">
                 <span className="flex flex-col gap-5">
                   <p>Subtotal</p>
@@ -95,7 +96,7 @@ export default function Complete() {
                   <p>€3.95</p>
                 </span>
               </div>
-              <div className="w-[70%] my-[20px] mx-auto bg-gray-300 h-[2px] ml-[40px]"></div>
+              <div className="w-[80%] my-[20px] mx-auto bg-gray-300 h-[2px]"></div>
               <span className="flex items-center justify-between w-full">
                 <p className="capitalize font-[500]">Total</p>
                 <p className="font-[500]">€7.95</p>
@@ -103,9 +104,17 @@ export default function Complete() {
             </div>
           </div>
           <div className="flex-1">
-            <div className="flex flex-col">
-              <button>keep shopping</button>
-              <button>print receipt</button>
+            <div className="flex pt-[60px] items-center justify-center flex-col gap-[20px]">
+              <Link href="/collection">
+                <button className="w-fit py-[10px] px-[24px] border-black border-[1px] mx-auto uppercase bg-black text-[14px] text-white">
+                  keep shopping
+                </button>
+              </Link>
+              <Link href="#">
+                <button className="w-fit py-[10px] px-[24px] uppercase mx-auto border-[1px] border-black">
+                  print receipt
+                </button>
+              </Link>
             </div>
           </div>
         </div>
