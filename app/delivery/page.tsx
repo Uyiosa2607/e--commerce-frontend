@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Delivery() {
   return (
     <main>
-      <div className="text-gray-500 container mb-[20px] flex justify-around items-center uppercase text-[16px]">
+      <div className="text-gray-500 container mb-[20px] flex justify-between items-center uppercase text-[16px]">
         <p>1. my bag</p>
         <div className="w-[150px] h-[1px] bg-gray-300"></div>
         <p>2. delivery</p>

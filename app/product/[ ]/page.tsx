@@ -83,12 +83,14 @@ export default function Product() {
                 <p className="text-[20px] font-bold">1</p>
                 <FaMinus />
               </span>
-              <button className="uppercase bg-black text-white py-3 px-9">
-                <span className="flex items-center gap-1">
-                  <MdOutlineShoppingBag />
-                  add to bag
-                </span>
-              </button>
+              <Link href="/cart">
+                <button className="uppercase bg-black text-white py-3 px-9">
+                  <span className="flex items-center gap-1">
+                    <MdOutlineShoppingBag />
+                    add to bag
+                  </span>
+                </button>
+              </Link>
             </div>
           </div>
         </div>
