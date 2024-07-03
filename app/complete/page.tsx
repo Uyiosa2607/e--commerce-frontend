@@ -85,13 +85,12 @@ export default function Complete() {
         <div className="flex">
           <div className="flex-1">
             <div className="w-[80%] h-fit py-[20px] px-[20px] mx-auto">
-              <div className="w-[80%] my-[20px] mx-auto bg-gray-300 h-[2px]"></div>
               <div className="w-full flex items-center justify-between">
                 <span className="flex flex-col gap-5">
                   <p>Subtotal</p>
                   <p>Delivery</p>
                 </span>
-                <span className="flex flex-col gap-5">
+                <span className="flex flex-col font[500] gap-5">
                   <p>€3.90</p>
                   <p>€3.95</p>
                 </span>
