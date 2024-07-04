@@ -52,14 +52,14 @@ export default function Collection() {
     <>
       <section>
         <img
-          className="h-[308px] w-full object-cover"
+          className="h-[180px] lg:h-[308px] w-full object-cover"
           src="/collection-banner.png"
           alt="tea banner"
         />
       </section>
       <section>
-        <div className="container flex gap-3">
-          <div className="collasible w-[200px]">
+        <div className="container p-[10px] flex gap-3">
+          <div className="hidden lg:block collasible w-[200px]">
             <div className="flex h-screen flex-col justify-between bg-white">
               <div className="py-4">
                 <ul className="mt-6">
@@ -274,12 +274,12 @@ export default function Collection() {
               </div>
             </div>
           </div>
-          <div className="grid py-[80px] grid-cols-3 w-full gap-y-6 gap-x-[160px]">
+          <div className="grid gap-x-4 gap-y-4 lg:py-[80px] grid-cols-2 lg:grid-cols-3 w-full lg:gap-y-6 lg:gap-x-[160px]">
             {teas.map((tea) => (
               <Link key={tea.id} href="/product/id">
                 <div className="flex flex-col items-center justify-center">
                   <img
-                    className="w-[264px] h-[264px]"
+                    className="w-[172px] h-[172px] lg:w-[264px] lg:h-[264px]"
                     src={tea.img}
                     alt={tea.desc}
                   />

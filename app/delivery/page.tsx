@@ -3,19 +3,19 @@ import Link from "next/link";
 export default function Delivery() {
   return (
     <main>
-      <div className="text-gray-500 container mb-[20px] flex justify-between items-center uppercase text-[16px]">
+      <div className="text-gray-500 container px-[10px] mb-[20px] flex justify-between items-center uppercase text-[12px] lg:text-[16px]">
         <p>1. my bag</p>
         <div className="w-[150px] h-[1px] bg-gray-300"></div>
         <p>2. delivery</p>
         <div className="w-[150px] h-[1px] bg-gray-300"></div>
         <p>3. review & payment</p>
       </div>
-      <section className="container flex gap-[40px] mb-[100px] text-[14px]">
-        <div className="flex items-cnter flex-1 gap-[40px]">
+      <section className="container px-[10px] flex flex-col lg:flex-row gap-[40px] mb-[100px] text-[14px]">
+        <div className="flex flex-col lg:flex-row items-cnter flex-1 gap-[40px]">
           <div>
             <div>
               <h4 className="text-[16px] mb-[15px]">Shipping Address</h4>
-              <form className="w-[289px]">
+              <form className="px-[10px] lg:px-0 lg:w-[289px]">
                 <input
                   className="block mb-[20px] w-full p-[10px] border-[1px] border-gray-400"
                   placeholder="First Name"
@@ -54,7 +54,7 @@ export default function Delivery() {
               </form>
             </div>
           </div>
-          <div className="w-[289px]">
+          <div className="lg:w-[289px] px-[10px] lg:px-0">
             <h4 className="text-[16px] mb-[8px]">Billing Address</h4>
             <p className="text-[12px] text-gray-400 mb-[10px]">
               (same as shipping address)
@@ -74,7 +74,7 @@ export default function Delivery() {
           </div>
         </div>
         <div className="flex-1">
-          <div className="h-fit py-[20px] px-[20px] w-[90%] mx-auto">
+          <div className="h-fit py-[20px] lg:px-[20px] px-[10px] lg:w-[90%] mx-auto">
             <h4 className="mb-[20px]">Order Summary</h4>
             <div className="w-full flex items-center justify-between">
               <span className="flex flex-col gap-5">

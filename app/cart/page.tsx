@@ -7,14 +7,14 @@ import Link from "next/link";
 export default function Proceed() {
   return (
     <main>
-      <div className="text-gray-500 container flex justify-between items-center uppercase text-[16px]">
+      <div className="text-gray-500 container px-[10px] flex justify-between items-center uppercase text-[12px] lg:text-[16px]">
         <p>1. my bag</p>
         <div className="w-[150px] h-[1px] bg-gray-300"></div>
         <p>2. delivery</p>
         <div className="w-[150px] h-[1px] bg-gray-300"></div>
         <p>3. review & payment</p>
       </div>
-      <section className="container gap-[50px] flex my-[40px]">
+      <section className="container px-[10px] gap-[50px] flex flex-col lg:flex-row my-[40px]">
         <div className="flex-1 text-[14px] flex flex-col gap-[38px]">
           {collections.map((tea) => (
             <div className="flex gap-[10px] items-center" key={tea.id}>
@@ -35,8 +35,8 @@ export default function Proceed() {
               </div>
             </div>
           ))}
-          <div className="w-[80%] bg-gray-300 h-[2px] mx-auto"></div>
-          <span className="w-[90%] ml-[20px] mx-auto  flex items-center justify-between">
+          <div className="lg:w-[80%] bg-gray-300 h-[2px] mx-auto"></div>
+          <span className="lg:w-[90%] ml-[20px] mx-auto  flex items-center justify-between">
             <p>Subtotal</p>
             <p className="font-[600]">€3.90</p>
           </span>
@@ -49,7 +49,7 @@ export default function Proceed() {
           </span>
         </div>
         <div className="flex-1 text-[14px]">
-          <div className=" bg-gray-100 w-[80%] h-fit py-[20px] px-[20px] mx-auto">
+          <div className=" bg-gray-100 lg:w-[80%] h-fit py-[20px] px-[20px] mx-auto">
             <h4 className="mb-[20px]">Order Summary</h4>
             <div className="w-full flex items-center justify-between">
               <span className="flex flex-col gap-5">
@@ -61,7 +61,7 @@ export default function Proceed() {
                 <p>€3.95</p>
               </span>
             </div>
-            <div className="w-[70%] my-[20px] mx-auto bg-gray-300 h-[2px] ml-[40px]"></div>
+            <div className="lg:w-[70%] my-[20px] mx-auto bg-gray-300 h-[2px] ml-[40px]"></div>
             <span className="flex items-center justify-between w-full">
               <p className="capitalize">Total</p>
               <p className="font-[600]">€7.95</p>
@@ -75,7 +75,7 @@ export default function Proceed() {
               </button>
             </Link>
           </div>
-          <div className="mt-[50px] w-[80%] mx-auto p-5 bg-gray-100">
+          <div className="mt-[50px] lg:w-[80%] mx-auto p-5 bg-gray-100">
             <p className="mb-[20px]">Payment type</p>
             <span className="flex justify-between items-center">
               <img className="w-[48px] h-[32px]" src="/card-1.png" alt="card" />
@@ -85,7 +85,7 @@ export default function Proceed() {
               <img className="w-[48px] h-[32px]" src="/card-5.png" alt="card" />
             </span>
           </div>
-          <div className="mt-[50px] w-[80%] mx-auto p-5 bg-gray-100">
+          <div className="mt-[50px] lg:w-[80%] mx-auto p-5 bg-gray-100">
             <p className="mb-[20px]">Delivery and retour</p>
             <div className="flex flex-col gap-6">
               <span className="flex gap-2 items-center">

@@ -1,7 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 
-import Footer from "@/components/items/footer";
-
 export default function Home() {
   const teaCollection = [
     {
@@ -137,12 +135,12 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row gap-3">
             <div className="flex gap-4">
               <img
-                className="order-1 flex-1 w-[172px] h-[273px]  lg:w-[265px] lg:h-[360px] object-cover"
+                className="order-1 flex-1 w-[172px] h-[273px] lg:w-[265px] lg:h-[360px] object-cover"
                 src="/kettle.png"
                 alt="image contains kettle and tea cup"
               />
               <div className="flex-1 order-3">
-                <h4 className="uppercase  lg:text-[20px] font-medium lg:mb-[30px] leading-tight">
+                <h4 className="uppercase lg:text-[20px] font-medium lg:mb-[30px] leading-tight">
                   how to steep tea like a pro
                 </h4>
                 <p className="lg:w-[90%] lg:text-[16px] lg:mb-[20px]">
@@ -159,7 +157,7 @@ export default function Home() {
             </div>
             <div className="flex gap-4">
               <img
-                className="flex-1 w-[172px] h-[273px]  lg:w-[265px] lg:h-[360px] object-cover"
+                className="flex-1 w-[172px] h-[273px] lg:w-[265px] lg:h-[360px] object-cover"
                 src="/tea-cup.png"
                 alt="tea cup"
               />

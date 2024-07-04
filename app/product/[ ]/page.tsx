@@ -16,22 +16,22 @@ import Link from "next/link";
 export default function Product() {
   return (
     <main>
-      <section className="container flex">
+      <section className="container p-[10px] flex flex-col lg:flex-row">
         <div className="flex-1">
           <img
-            className="w-[560px] h-[507px]"
+            className="lg:w-[560px] lg:h-[507px]"
             src="/product-image.png"
             alt="product image"
           />
         </div>
         <div className="flex-1 flex flex-col">
-          <h4 className="text-[30px] capitalize font-[600] w-[70%] leading-tight">
+          <h4 className="text-[30px] capitalize font-[600] lg:w-[70%] leading-tight">
             ceylon ginger cinamon chai tea
           </h4>
           <span className="text-[14px] mt-[15px]">
             a lovely warming chai tea with ginger cinamon flavours
           </span>
-          <div className="flex items-center text-[16px] justify-between w-[60%] mt-[30px]">
+          <div className="flex items-center text-[16px] justify-between lg:w-[60%] mt-[30px]">
             <span className="flex gap-1 items-center">
               <FaGlobe />
               <p>Origin: Iran</p>
@@ -96,7 +96,7 @@ export default function Product() {
         </div>
       </section>
       <section className="w-full">
-        <div className="container py-[20px] flex gap-3 text-[14px]">
+        <div className="container py-[20px] px-[10px] flex flex-col lg:flex-row lg:gap-3 text-[14px]">
           <div className="flex-1">
             <p className="text-[32px] font-medium mb-[10px]">
               Steeping instructions
@@ -134,7 +134,7 @@ export default function Product() {
 
           <div className="flex-1">
             <p className="capitalize font-[500] text-[32px]">about this tea</p>
-            <span className="flex w-full items-center gap-6 my-[20px]">
+            <span className="flex w-full items-center gap-3 lg:gap-6 my-[20px]">
               <span className="flex flex-col gap-1">
                 <p className="uppercase font-medium">flavour</p>
                 <p>spicy</p>
