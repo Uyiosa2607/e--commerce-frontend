@@ -29,13 +29,17 @@ export default function AdsCard(props: any) {
       <h4 className="font-semibold text-center text-[28px] mb-[40px]">
         {props.title}
       </h4>
-      <div className="w-full flex items-center justify-center">
+      <div className="w-full grid grid-cols-2 lg:grid-cols-3 items-center justify-center">
         {collections.map((tea) => (
           <div
             className="flex flex-col items-center justify-center"
             key={tea.id}
           >
-            <img className="w-[264px] h-[264px]" src={tea.img} alt={tea.desc} />
+            <img
+              className="w-[172px] h-[172px] lg:w-[264px] lg:h-[264px]"
+              src={tea.img}
+              alt={tea.desc}
+            />
             <div className="flex flex-col capitalize font-light text-center text-[14px] py-1">
               <span>{tea.name}</span>
               <span>{tea.desc}</span>
