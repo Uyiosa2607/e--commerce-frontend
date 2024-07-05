@@ -6,12 +6,12 @@ import Link from "next/link";
 export default function Complete() {
   return (
     <main className="text-[16px]">
-      <section className="container">
+      <section className="container px-[10px]">
         <div className="mb-[30px]">
           <h2 className="uppercase font-[500] text-[32px] mb-[12px]  text-center">
             thank you
           </h2>
-          <p className="text-center mb-[20px] w-[50%] mx-auto">
+          <p className="text-center lg:mb-[20px] lg:w-[50%] mx-auto">
             We received your order and will start preparing your package right
             away. You will receive a confirmation email in a moment.
           </p>
@@ -19,9 +19,9 @@ export default function Complete() {
             Order details - 8972491047359
           </p>
         </div>
-        <div className="flex gap-5">
+        <div className="flex flex-col lg:flex-row gap-5">
           <div className="flex-[1.3]">
-            <div className="w-[80%]">
+            <div className="lg:w-[80%]">
               {collections.map((tea) => (
                 <div className="flex gap-[10px] items-center" key={tea.id}>
                   <img
@@ -62,7 +62,7 @@ export default function Complete() {
               </div>
             </div>
           </div>
-          <div className="flex-1 ml-[50px]">
+          <div className="flex-1 lg:ml-[50px]">
             <div className="mb-[30px]">
               <h4 className="text-[17px] font-[500] mb-[15px]">
                 Payment method
@@ -81,10 +81,10 @@ export default function Complete() {
           </div>
         </div>
       </section>
-      <section className="container">
-        <div className="flex">
+      <section className="container px-[10px]">
+        <div className="flex flex-col lg:flex-row">
           <div className="flex-1">
-            <div className="w-[80%] h-fit py-[20px] px-[20px] mx-auto">
+            <div className="lg:w-[80%] h-fit py-[20px] px-[20px] mx-auto">
               <div className="w-full flex items-center justify-between">
                 <span className="flex flex-col gap-5">
                   <p>Subtotal</p>

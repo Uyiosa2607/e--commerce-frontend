@@ -25,7 +25,7 @@ const collections = [
 
 export default function AdsCard(props: any) {
   return (
-    <section className="container mb-[100px] mt-[180px]">
+    <section className="container px-[10px] mb-[100px] mt-[180px]">
       <h4 className="font-semibold text-center text-[28px] mb-[40px]">
         {props.title}
       </h4>

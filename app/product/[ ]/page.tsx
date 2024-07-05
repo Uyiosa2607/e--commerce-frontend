@@ -19,7 +19,7 @@ export default function Product() {
       <section className="container p-[10px] flex flex-col lg:flex-row">
         <div className="flex-1">
           <img
-            className="lg:w-[560px] lg:h-[507px]"
+            className="object-cover h-[393px] w-[100%] lg:w-[560px] lg:h-[507px]"
             src="/product-image.png"
             alt="product image"
           />
@@ -50,7 +50,7 @@ export default function Product() {
           </span>
           <div className="pt-4">
             <span className="text-sm font-[500] mb-[5px]">variants</span>
-            <div className="flex items-center my-2 justify-between text-[50px] w-[80%]">
+            <div className="flex items-center my-2 justify-between text-[50px] overflow-x-scroll lg:w-[80%] ">
               <img
                 className="w-[84px] h-[100px]"
                 src="/tea-bag-icon.png"
@@ -77,14 +77,14 @@ export default function Product() {
                 alt="tea bag 100g icon"
               />
             </div>
-            <div className="flex gap-6 text-[14px] mt-[50px] bottom-2">
-              <span className="flex items-center gap-2">
-                <FaPlus />
-                <p className="text-[20px] font-bold">1</p>
-                <FaMinus />
+            <div className="flex gap-8 lg:gap-6 items-center justify-center lg:justify-normal lg:items-start text-[14px] mt-[50px] bottom-2">
+              <span className="flex items-center gap-4">
+                <FaPlus className="text-[12px]" />
+                <p className="text-[20px] font-[500]">1</p>
+                <FaMinus className="text-[12px]" />
               </span>
               <Link href="/cart">
-                <button className="uppercase bg-black text-white py-3 px-9">
+                <button className="uppercase text-[12px] bg-black text-white py-[10px] px-9">
                   <span className="flex items-center gap-1">
                     <MdOutlineShoppingBag />
                     add to bag
