@@ -13,12 +13,12 @@ export default function Payment() {
       </div>
       <section className="container px-[10px]">
         <div className="flex flex-col lg:flex-row justify-between">
-          <div className="lg:w-[320px] order-[4] lg:order-none">
+          <div className="lg:w-[320px] mb-[15px] lg:mb-0">
             <div className="mb-[15px] lg:mb-[20px]">
-              <h4 className="mb-[15px] lg:mb-[25px] text-[18px]">
+              <h4 className="font-[600] mb-[10px] lg:mb-[25px] text-[20px]">
                 Delivery Details
               </h4>
-              <p className="mb-[10px] font-[600]">Shipping address</p>
+              <p className="mb-[10px] font-[500]">Shipping address</p>
               <p className="lg:w-[100%]">
                 3 Falahi St , Falahi Ave, Pasdaran Blvd, Fars Province , Shiraz
                 71856-95159 Iran
@@ -32,20 +32,26 @@ export default function Payment() {
               <p className="text-[14px] font-[600]">Contact information</p>
               <p>amoopur@gmail.com</p>
             </div>
-            <p className="text-[14px] text-center uppercase text-orange-400">
+            <p className="text-[14px] text-center font-[600] uppercase text-orange-400">
               edit details
             </p>
           </div>
           <div className="lg:w-[460px]">
-            <h4 className="mb-[20px]">Payment type</h4>
-            <div className="flex lg:border-[2px] lg:border-gray-400 mb-[18px] p-[10px] items-center justify-center w-full">
-              <img className="w-[48px] h-[32px]" src="/card-1.png" alt="card" />
+            <h4 className="font-[600] mb-[10px] lg:mb-[25px] text-[20px]">
+              Payment type
+            </h4>
+            <div className="hidden lg:flex lg:border-[2px] mb-[10px] lg:border-gray-400 lg:mb-[18px] lg:p-[10px] items-center justify-center w-full">
+              <img
+                className="w-[42px] lg:w-[48px] h-[32px]"
+                src="/card-1.png"
+                alt="card"
+              />
             </div>
-            <form className="w-full">
-              <div className="lg:border-[2px] lg:border-gray-400  px-[10px] lg:p-5">
+            <form className="w-full mb-[12px] lg:mb-0">
+              <div className="lg:border-[2px] lg:border-gray-400 px-[10px] lg:p-5">
                 <div className="flex items-center gap-3">
                   <p className="text-[14px] font-[500]">Credit or Debit card</p>
-                  <div className="flex items-cnter gap-1">
+                  <div className="flex items-center justify-center lg:justify-normal gap-1">
                     <img
                       className="w-[30px] h-[20px]"
                       src="/card-1.png"
@@ -63,7 +69,7 @@ export default function Payment() {
                     />
                   </div>
                 </div>
-                <div className="mt-[40px] lg:w-[90%] mx-auto">
+                <div className="mt-[20px] lg:mt-[40px] lg:w-[90%] mx-auto">
                   <label className="font-[600]" htmlFor="">
                     Card Number
                   </label>
@@ -73,7 +79,7 @@ export default function Payment() {
                     placeholder={`xxxx     xxxx    xxxx     xxxx`}
                   />
                 </div>
-                <div className="lg:w-[90%] mb-[20px] mt-[40px] mx-auto flex items-center">
+                <div className="lg:w-[90%] mb-[20px] mt-[20px] lg:mt-[40px] mx-auto flex items-center">
                   <div>
                     <label className="font-[600]" htmlFor="">
                       Expiry date
@@ -87,20 +93,20 @@ export default function Payment() {
                   <div>
                     <p className="text-[13px] font-[600]">CVC</p>
                     <input
-                      className="pb-[5px] pt-[10px] w-[40%]  lg:border-gray-400 border-b-[2px]"
+                      className="pb-[5px] pt-[10px] w-[40%] lg:border-gray-400 border-b-[2px]"
                       type="text"
                       placeholder={`xxx`}
                     />
                   </div>
                 </div>
-                <button className="block text-[14px] uppercase border-[1px] border-black p-[10px] w-full">
+                <button className="block text-[14px] uppercase font-[500] border-[1px] border-black py-[10px] w-full">
                   advanced payment
                 </button>
               </div>
             </form>
           </div>
           <div>
-            <div className="lg:w-[420px] mx-auto order-[3] lg:order-none">
+            <div className="lg:w-[420px] mx-auto">
               <div className="w-full">
                 <h4 className="mb-[20px]">Order Summary</h4>
                 <div className="w-full flex items-center justify-between">
@@ -122,7 +128,7 @@ export default function Payment() {
                   Estimated shipping time: 2 days
                 </p>
                 <Link href="/complete">
-                  <button className="uppercase text-white mx-auto  mt-[30px] bg-black border-[1px] w-full py-2 px-6">
+                  <button className="uppercase text-white mx-auto text-[14px]  mt-[30px] bg-black border-[1px] w-full py-2 px-6">
                     checkout
                   </button>
                 </Link>

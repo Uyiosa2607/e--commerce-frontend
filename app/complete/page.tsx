@@ -8,18 +8,18 @@ export default function Complete() {
     <main className="text-[16px]">
       <section className="container px-[10px]">
         <div className="mb-[30px]">
-          <h2 className="uppercase font-[500] text-[32px] mb-[12px]  text-center">
+          <h2 className="uppercase font-[600] text-lg lg:text-[32px] mb-[12px]  text-center">
             thank you
           </h2>
-          <p className="text-center lg:mb-[20px] lg:w-[50%] mx-auto">
+          <p className="text-center mb-[10px] lg:mb-[20px] lg:w-[50%] mx-auto">
             We received your order and will start preparing your package right
             away. You will receive a confirmation email in a moment.
           </p>
-          <p className="text-center font-[500] uppercase text-[18px]">
+          <p className="text-center font-[600] uppercase text-[13px] lg:text-[18px]">
             Order details - 8972491047359
           </p>
         </div>
-        <div className="flex flex-col lg:flex-row gap-5">
+        <div className="flex flex-col mb-[10px] lg:mb-0 lg:flex-row gap-5">
           <div className="flex-[1.3]">
             <div className="lg:w-[80%]">
               {collections.map((tea) => (
@@ -43,7 +43,7 @@ export default function Complete() {
           <div className="flex-1 flex gap-[50px]">
             <div className="flex-1">
               <div className="mb-[20px]">
-                <h4 className="mb-[25px] font-[500] text-[18px]">
+                <h4 className="mb-[10px] mt-[10px] lg:mt-0 lg:mb-[25px] font-[600] text-[20px]">
                   Delivery Details
                 </h4>
                 <p className="mb-[10px] font-[500]">Shipping address</p>
@@ -53,11 +53,11 @@ export default function Complete() {
                 </p>
               </div>
               <div className="mb-[30px]">
-                <p className="text-[14px] font-[600]">Billing Address</p>
+                <p className="text-[14px] font-[500]">Billing Address</p>
                 <p>same as shipping address</p>
               </div>
               <div className="mb-[30px]">
-                <p className="text-[14px] font-[600]">Contact information</p>
+                <p className="text-[14px] font-[500]">Contact information</p>
                 <p>amoopur@gmail.com</p>
               </div>
             </div>
@@ -91,14 +91,14 @@ export default function Complete() {
                   <p>Delivery</p>
                 </span>
                 <span className="flex flex-col font[500] gap-5">
-                  <p>€3.90</p>
-                  <p>€3.95</p>
+                  <p className="font-[600]">€3.90</p>
+                  <p className="font-[600]">€3.95</p>
                 </span>
               </div>
               <div className="w-[80%] my-[20px] mx-auto bg-gray-300 h-[2px]"></div>
               <span className="flex items-center justify-between w-full">
                 <p className="capitalize font-[500]">Total</p>
-                <p className="font-[500]">€7.95</p>
+                <p className="font-[600]">€7.95</p>
               </span>
             </div>
           </div>
@@ -110,7 +110,7 @@ export default function Complete() {
                 </button>
               </Link>
               <Link href="#">
-                <button className="w-fit py-[10px] px-[24px] uppercase mx-auto border-[1px] border-black">
+                <button className="w-fit py-[8px] px-[24px] uppercase mx-auto border-[1px] border-black">
                   print receipt
                 </button>
               </Link>
