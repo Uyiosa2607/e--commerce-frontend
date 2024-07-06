@@ -45,7 +45,7 @@ export default function Navbar() {
           <div
             className={`transition-transform duration-300 ease-in-out ${
               isOpen ? "transform translate-x-0" : "transform translate-x-full"
-            }  lg:hidden px-[12px] flex flex-col gap-3 text-[14px] absolute top-[9vh] pt-2 right-0 h-screen bg-white w-[50%]`}
+            }  lg:hidden px-[8px] flex flex-col gap-3 text-[14px] absolute top-[7vh] pt-2 right-0 h-screen bg-white w-[53%]`}
           >
             <div className="flex border-[1px] border-black p-[4px] items-center gap-1 mb-2">
               <MdOutlineSearch className="cursor-pointer text-[22px]" />
