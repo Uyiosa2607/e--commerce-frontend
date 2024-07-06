@@ -14,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html className="overflow-x-hidden" lang="en">
+    <html lang="en">
       <body>
         <Navbar />
         {children}

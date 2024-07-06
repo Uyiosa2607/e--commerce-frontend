@@ -19,7 +19,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="py-[4px] lg:py-[30px] left-0 top-0 px-1 sticky w-full bg-white z-50">
+    <header className="py-[4px] lg:py-[30px] left-0 top-0 px-1 sticky w-full bg-white z-50 overflow-x-clip">
       <div className="container p-[10px] wrapper flex justify-between items-center">
         <Link href="/">
           <div className="left flex gap-1 items center">
@@ -45,7 +45,7 @@ export default function Navbar() {
           <div
             className={`transition-transform duration-300 ease-in-out ${
               isOpen ? "transform translate-x-0" : "transform translate-x-full"
-            }  lg:hidden pl-[12px] flex flex-col gap-3 text-[14px] absolute top-[10vh] pt-2 right-0 h-screen bg-white w-[47%]`}
+            }  lg:hidden pl-[12px] flex flex-col gap-3 text-[14px] absolute top-[9vh] pt-2 right-0 h-screen bg-white w-[47%]`}
           >
             <div className="flex border-[1px] border-black p-[4px] items-center gap-1 mb-2">
               <MdOutlineSearch className="cursor-pointer text-[22px]" />
