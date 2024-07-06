@@ -45,7 +45,7 @@ export default function Navbar() {
           <div
             className={`transition-transform duration-300 ease-in-out ${
               isOpen ? "transform translate-x-0" : "transform translate-x-full"
-            }  lg:hidden px-[8px] flex flex-col gap-3 text-[14px] absolute top-[7vh] pt-2 right-0 h-screen bg-white w-[53%]`}
+            }  lg:hidden px-[8px] flex flex-col gap-3 text-[14px] absolute top-[7vh] pt-2 right-0 h-screen bg-white w-[60%]`}
           >
             <div className="flex border-[1px] border-black p-[4px] items-center gap-1 mb-2">
               <MdOutlineSearch className="cursor-pointer text-[22px]" />
@@ -56,7 +56,7 @@ export default function Navbar() {
               />
             </div>
             <div className="flex items-center gap-1">
-              <MdOutlinePersonOutline className="cursor-pointer  text-[25px]" />
+              <MdOutlinePersonOutline className="cursor-pointer  text-[30px]" />
               <div className="m-0 p-0">
                 <p className="uppercase text-[10px] font-[600]">user account</p>
                 <p className="text-[11px] text-gray-400">
@@ -65,7 +65,7 @@ export default function Navbar() {
               </div>
             </div>
             <div className="flex items-center gap-1">
-              <MdOutlineShoppingBag className="cursor-pointer text-[25px]" />
+              <MdOutlineShoppingBag className="cursor-pointer text-[30px]" />
               <div>
                 <p className="uppercase text-[10px] font-[600]">your bag</p>
                 <p className="text-[11px]  text-gray-400">
