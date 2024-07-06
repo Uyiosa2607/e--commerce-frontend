@@ -47,35 +47,35 @@ export default function Navbar() {
               isOpen ? "transform translate-x-0" : "transform translate-x-full"
             }  lg:hidden px-[8px] flex flex-col gap-3 text-[14px] absolute top-[7vh] pt-2 right-0 h-screen bg-white w-[60%]`}
           >
-            <div className="flex border-[1px] border-black p-[4px] items-center gap-1 mb-2">
-              <MdOutlineSearch className="cursor-pointer text-[22px]" />
-              <input
-                className="text-[12px]"
-                placeholder="SEARCH PRODUCTS"
-                type="text"
-              />
-            </div>
-            <div className="flex items-center gap-1">
-              <MdOutlinePersonOutline className="cursor-pointer  text-[30px]" />
-              <div className="m-0 p-0">
-                <p className="uppercase text-[10px] font-[600]">user account</p>
-                <p className="text-[11px] text-gray-400">
-                  we know you as a guest user
-                </p>
+            <Link href="/account">
+              <div className="flex items-center gap-1">
+                <MdOutlinePersonOutline className="cursor-pointer  text-[30px]" />
+                <div>
+                  <p className="uppercase text-[10px] font-[600]">
+                    user account
+                  </p>
+                  <p className="text-[11px] text-gray-400">
+                    we know you as a guest user
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="flex items-center gap-1">
-              <MdOutlineShoppingBag className="cursor-pointer text-[30px]" />
-              <div>
-                <p className="uppercase text-[10px] font-[600]">your bag</p>
-                <p className="text-[11px]  text-gray-400">
-                  items has been added
-                </p>
+            </Link>
+            <Link href="/cart">
+              <div className="flex items-center gap-1">
+                <MdOutlineShoppingBag className="cursor-pointer text-[30px]" />
+                <div>
+                  <p className="uppercase text-[10px] font-[600]">your bag</p>
+                  <p className="text-[11px]  text-gray-400">
+                    items has been added
+                  </p>
+                </div>
               </div>
-            </div>
+            </Link>
             <div className="w-[80%] mx-auto my-[10px] bg-gray-300 h-[1px]"></div>
             <div className="flex flex-col gap-3 text-[12px] font-[500] pl-[12px]">
-              <p className="uppercase">tea collections</p>
+              <Link href="/collection">
+                <p className="uppercase">tea collections</p>
+              </Link>
               <p className="uppercase">accesories</p>
               <p className="uppercase">blog</p>
               <p className="uppercase">contact us</p>
