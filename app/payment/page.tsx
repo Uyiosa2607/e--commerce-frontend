@@ -12,35 +12,33 @@ export default function Payment() {
         <p>3. review & payment</p>
       </div>
       <section className="container px-[10px]">
-        <div className="flex flex-col lg:flex-row justify-between">
+        <div className="flex flex-col gap-5 lg:flex-row justify-between">
           <div className="lg:w-[320px] mb-[15px] lg:mb-0">
             <div className="mb-[15px] lg:mb-[20px]">
-              <h4 className="font-[600] mb-[10px] lg:mb-[25px] text-[20px]">
+              <h4 className="mb-[10px] font-semibold lg:mb-[25px] text-lg">
                 Delivery Details
               </h4>
-              <p className="mb-[10px] font-[500]">Shipping address</p>
-              <p className="lg:w-[100%]">
+              <p className="mb-[10px] text-sm font-medium">Shipping address</p>
+              <p className="lg:w-[100%] text-sm font-normal">
                 3 Falahi St , Falahi Ave, Pasdaran Blvd, Fars Province , Shiraz
                 71856-95159 Iran
               </p>
             </div>
             <div className="mb-[10px] lg:mb-[30px]">
-              <p className="text-[14px] font-[600]">Billing Address</p>
-              <p>same as shipping address</p>
+              <p className="text-[14px] text-sm font-medium">Billing Address</p>
+              <p className="text-sm">same as shipping address</p>
             </div>
             <div className="mb-[18px] lg:mb-[30px]">
-              <p className="text-[14px] font-[600]">Contact information</p>
-              <p>amoopur@gmail.com</p>
+              <p className="text-sm font-medium">Contact information</p>
+              <p className="text-sm font-normal">amoopur@gmail.com</p>
             </div>
-            <p className="text-[14px] text-center font-[600] uppercase text-orange-400">
+            <p className="text-[14px] text-center lg:text-left font-[600] uppercase text-orange-400">
               edit details
             </p>
           </div>
-          <div className="lg:w-[460px]">
-            <h4 className="font-[600] mb-[10px] lg:mb-[25px] text-[20px]">
-              Payment type
-            </h4>
-            <div className="hidden lg:flex lg:border-[2px] mb-[10px] lg:border-gray-400 lg:mb-[18px] lg:p-[10px] items-center justify-center w-full">
+          <div className="lg:min-w-[300px]">
+            <h4 className="font-semibold text-lg mb-4">Payment type</h4>
+            <div className="hidden lg:flex lg:border-[1px] mb-[10px] lg:border-black lg:mb-[18px] lg:p-[10px] items-center justify-center w-full">
               <img
                 className="w-[42px] lg:w-[48px] h-[32px]"
                 src="/card-1.png"
@@ -48,9 +46,9 @@ export default function Payment() {
               />
             </div>
             <form className="w-full mb-[12px] lg:mb-0">
-              <div className="lg:border-[2px] lg:border-gray-400 px-[10px] lg:p-5">
+              <div className="lg:border-[1px] border-black  px-[10px] lg:p-5">
                 <div className="flex items-center gap-3">
-                  <p className="text-[14px] font-[500]">Credit or Debit card</p>
+                  <p className="text-sm font-[500]">Credit or Debit card</p>
                   <div className="flex items-center justify-center lg:justify-normal gap-1">
                     <img
                       className="w-[30px] h-[20px]"
@@ -70,47 +68,47 @@ export default function Payment() {
                   </div>
                 </div>
                 <div className="mt-[20px] lg:mt-[40px] lg:w-[90%] mx-auto">
-                  <label className="font-[600]" htmlFor="">
+                  <label className="font-[600] text-sm" htmlFor="">
                     Card Number
                   </label>
                   <input
-                    className="pb-[5px] pt-[10px] w-full block border-gray-400 border-b-[2px]"
+                    className="pb-[5px] pt-[10px] w-full block border-black border-b-[1px]"
                     type="text"
                     placeholder={`xxxx     xxxx    xxxx     xxxx`}
                   />
                 </div>
                 <div className="lg:w-[90%] mb-[20px] mt-[20px] lg:mt-[40px] mx-auto flex items-center">
                   <div>
-                    <label className="font-[600]" htmlFor="">
+                    <label className="font-[600] text-sm" htmlFor="">
                       Expiry date
                     </label>
                     <input
-                      className="pb-[5px] pt-[10px] w-[40%] block border-gray-400 border-b-[2px]"
+                      className="pb-[5px] pt-[10px] w-[40%] block border-black border-b-[1px]"
                       type="text"
                       placeholder={`xx / xx`}
                     />
                   </div>
                   <div>
-                    <p className="text-[13px] font-[600]">CVC</p>
+                    <p className="text-sm font-[600]">CVC</p>
                     <input
-                      className="pb-[5px] pt-[10px] w-[40%] lg:border-gray-400 border-b-[2px]"
+                      className="pb-[5px] pt-[10px] w-[40%] lg:border-black border-b-[1px]"
                       type="text"
                       placeholder={`xxx`}
                     />
                   </div>
                 </div>
-                <button className="block text-[14px] uppercase font-[500] border-[1px] border-black py-[10px] w-full">
+                <button className="block text-xs font-medium uppercase border-[1px] border-black py-[10px] w-full">
                   advanced payment
                 </button>
               </div>
             </form>
           </div>
           <div>
-            <div className="lg:w-[420px] mx-auto">
+            <div className="lg:min-w-[320px] mx-auto">
               <div className="w-full">
-                <h4 className="mb-[20px]">Order Summary</h4>
+                <h4 className="text-lg font-semibold mb-4">Order Summary</h4>
                 <div className="w-full flex items-center justify-between">
-                  <div className="flex flex-col gap-5">
+                  <div className="flex text-sm font-medium flex-col gap-5">
                     <p>Subtotal</p>
                     <p>Delivery</p>
                   </div>
@@ -120,11 +118,11 @@ export default function Payment() {
                   </div>
                 </div>
                 <div className="w-[70%] my-[20px] mx-auto bg-gray-300 h-[2px] ml-[40px]"></div>
-                <div className="flex items-center justify-between w-full">
+                <div className="flex items-center text-sm font-medium justify-between w-full">
                   <p className="capitalize">Total</p>
                   <p>€7.95</p>
                 </div>
-                <p className="my-[12px] text-gray-500">
+                <p className="my-[12px] text-sm font-medium">
                   Estimated shipping time: 2 days
                 </p>
                 <Link href="/complete">

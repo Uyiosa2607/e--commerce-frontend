@@ -19,7 +19,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="py-[4px] lg:py-[30px] left-0 top-0 px-1 sticky w-full bg-white z-50 overflow-x-clip">
+    <header className="py-[4px] lg:py-5 left-0 top-0 px-1 sticky w-full bg-white z-50 overflow-x-clip">
       <div className="container p-[10px] wrapper flex justify-between items-center">
         <Link href="/">
           <div className="left flex gap-1 items center">

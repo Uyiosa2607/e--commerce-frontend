@@ -25,70 +25,68 @@ export default function Product() {
           />
         </div>
         <div className="flex-1 flex flex-col">
-          <h4 className="text-[30px] capitalize font-[600] lg:w-[70%] leading-tight">
+          <h4 className="text-2xl lg:text-3xl font-semibold capitalize lg:w-[75%] leading-tight">
             ceylon ginger cinamon chai tea
           </h4>
-          <span className="text-[14px] mt-[15px]">
+          <span className="text-sm font-normal mt-2">
             a lovely warming chai tea with ginger cinamon flavours
           </span>
-          <div className="flex items-center text-[16px] justify-between lg:w-[60%] mt-[30px]">
-            <span className="flex gap-1 items-center">
-              <FaGlobe />
+          <div className="flex items-center text-sm font-medium justify-between lg:w-[40%] mt-4">
+            <div className="flex gap-1 items-center">
+              <FaGlobe size={12} />
               <p>Origin: Iran</p>
-            </span>
-            <span className="flex gap-1 items-center">
-              <FaShoppingBag />
+            </div>
+            <div className="flex gap-1 items-center">
+              <FaShoppingBag size={12} />
               <p>Organic</p>
-            </span>
-            <span className="flex gap-1 items-center">
-              <FaLeaf />
+            </div>
+            <div className="flex gap-1 items-center">
+              <FaLeaf size={12} />
               <p>Vegan</p>
-            </span>
+            </div>
           </div>
-          <span className="text-[40px] mt-[20px] mb-[8px] font-bold">
-            €3.90
-          </span>
-          <div className="pt-4">
-            <span className="text-sm font-[500] mb-[5px]">variants</span>
-            <div className="flex items-center my-2 justify-between text-[50px] overflow-x-scroll lg:w-[80%] ">
+          <div className="text-3xl mt-6 mb-1 font-bold">€3.90</div>
+          <div className="pt-2">
+            <span className="text-sm font-semibold mb-1">variants</span>
+            <div className="flex items-center my-2 justify-between  lg:w-[70%] ">
               <img
-                className="w-[84px] h-[100px]"
+                className="w-[84px] h-[80px]"
                 src="/tea-bag-icon.png"
                 alt="tea bag 100g icon"
               />
               <img
-                className="w-[84px] h-[100px]"
+                className="w-[84px] h-[80px]"
                 src="/tea-bag-icon.png"
                 alt="tea bag 100g icon"
               />
               <img
-                className="w-[84px] h-[100px]"
+                className="w-[84px] h-[80px]"
                 src="/tea-bag-icon.png"
                 alt="tea bag 100g icon"
               />
               <img
-                className="w-[84px] h-[100px]"
+                className="w-[84px] h-[80px]"
                 src="/tea-bag-icon.png"
                 alt="tea bag 100g icon"
               />
               <img
-                className="w-[84px] h-[100px]"
+                className="w-[84px] h-[80px]"
                 src="/tea-bag-icon.png"
                 alt="tea bag 100g icon"
               />
             </div>
-            <div className="flex gap-8 lg:gap-6 items-center justify-center lg:justify-normal lg:items-start text-[14px] mt-[50px] bottom-2">
-              <span className="flex items-center gap-4">
+            <div className="flex gap-8 lg:gap-6 items-center justify-center lg:justify-normal lg:items-start text-[14px] mt-5 bottom-2">
+              <div className="flex items-center gap-4">
                 <FaPlus className="text-[12px]" />
-                <p className="text-[20px] font-[500]">1</p>
+                <p className="text-lg font-bold">1</p>
                 <FaMinus className="text-[12px]" />
-              </span>
+              </div>
               <Link href="/cart">
                 <button className="uppercase text-[12px] bg-black text-white py-[10px] px-9">
-                  <span className="flex items-center gap-1">
+                  <div className="flex items-center gap-1">
                     <MdOutlineShoppingBag />
                     add to bag
-                  </span>
+                  </div>
                 </button>
               </Link>
             </div>
@@ -98,75 +96,80 @@ export default function Product() {
       <section className="w-full">
         <div className="container py-[20px] px-[10px] flex flex-col lg:flex-row lg:gap-3 text-[14px]">
           <div className="flex-1">
-            <p className="text-[32px] font-medium mb-[10px]">
-              Steeping instructions
-            </p>
-            <span className="flex gap-1 items-center">
+            <p className="text-2xl font-medium mb-3">Steeping instructions</p>
+            <div className="flex gap-1 items-center">
               <SlCup />
               <p>
-                <b className="uppercase font-medium">serving size:</b> 2 tsp per
-                cup
+                <b className="uppercase text-xs font-semibold">serving size:</b>
+                <span className="font-medium">&nbsp;2 tsp per cup</span>
               </p>
-            </span>
+            </div>
             <div className="w-[180px] ml-[10px] my-[8px] h-[2px] bg-gray-300"></div>
-            <span className="flex gap-1 items-center">
+            <div className="flex gap-1 items-center">
               <PiBowlSteam />
               <p>
-                <b className="uppercase font-medium">water temparature:</b> 100C
+                <b className="uppercase text-xs font-semibold">
+                  water temparature:
+                </b>{" "}
+                <span className="font-medium">&nbsp;100</span>
               </p>
-            </span>
+            </div>
             <div className="w-[180px] ml-[10px] my-[8px] h-[2px] bg-gray-300"></div>
-            <span className="flex gap-1 items-center">
+            <div className="flex gap-1 items-center">
               <LuAlarmClock />
               <p>
-                <b className="font-medium uppercase">steeping time:</b>3 - 5
-                minutes
+                <b className="font-semibold text-xs uppercase">
+                  steeping time:
+                </b>
+                <span className="font-medium">&nbsp;3 - 5 minutes</span>
               </p>
-            </span>
+            </div>
             <div className="w-[180px] ml-[10px] my-[8px] h-[2px] bg-gray-300"></div>
-            <span className="flex gap-1 items-center">
+            <div className="flex gap-1 items-center">
               <div className="h-[14px] w-[14px] rounded-full bg-red-500"></div>
               <p>
-                <b className="uppercase font-medium">color after 3 minutes</b>
+                <b className="uppercase font-semibold text-xs">
+                  color after 3 minutes
+                </b>
               </p>
-            </span>
+            </div>
           </div>
 
-          <div className="flex-1">
-            <p className="capitalize font-[500] text-[32px]">about this tea</p>
-            <span className="flex w-full items-center gap-3 lg:gap-6 my-[20px]">
-              <span className="flex flex-col gap-1">
-                <p className="uppercase font-medium">flavour</p>
+          <div className="flex-1 mt-3">
+            <p className="font-medium text-2xl">About this Tea</p>
+            <div className="flex w-full lg:w-[80%] text-sm items-center justify-between gap-3 lg:gap-6 my-2">
+              <div className="flex flex-col gap-1">
+                <p className="uppercase text-xs font-medium">flavour</p>
                 <p>spicy</p>
-              </span>
+              </div>
 
-              <span className="h-[40px] w-[1px] bg-gray-300"></span>
+              <div className="h-[40px] w-[1px] bg-gray-300"></div>
 
-              <span className="flex flex-col gap-1">
-                <p className="uppercase font-medium">qualities</p>
+              <div className="flex flex-col gap-1">
+                <p className="uppercase text-xs font-medium">qualities</p>
                 <p>sooting</p>
-              </span>
+              </div>
 
-              <span className="h-[40px] w-[1px] bg-gray-300"></span>
+              <div className="h-[40px] w-[1px] bg-gray-300"></div>
 
-              <span className="flex flex-col gap-1">
-                <p className="uppercase font-medium">caffaine</p>
+              <div className="flex flex-col gap-1">
+                <p className="uppercase text-xs font-medium">caffaine</p>
                 <p>medium</p>
-              </span>
+              </div>
 
               <span className="h-[40px] w-[1px] bg-gray-300"></span>
 
               <span className="flex flex-col gap-1">
-                <p className="uppercase font-medium">allergens</p>
+                <p className="uppercase text-xs font-medium">allergens</p>
                 <p>Nuts-free</p>
               </span>
-            </span>
+            </div>
 
             <div>
-              <h4 className="capitalize mb-[10px] font-[500] text-[32px]">
+              <h4 className="capitalize pt-1 mb-2 font-medium text-2xl">
                 ingredients
               </h4>
-              <p>
+              <p className="text-sm font-normal">
                 Black Ceylon tea, Green tea, Ginger root, Cloves, Black pepper,
                 Cinnamon sticks, Cardamom, Cinnamon pieces.
               </p>

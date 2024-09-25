@@ -1,10 +1,10 @@
 export default function Footer() {
   return (
     <footer className="bg-gray-100 py-[30px]">
-      <div className="container flex flex-col lg:flex-row justify-between p-[10px] text-[13px]">
-        <div className="flex w-[100%] gap-[20px] lg:justify-around">
+      <div className="container flex flex-col md:flex-row justify-between p-[10px] text-[13px]">
+        <div className="flex w-[100%] gap-[20px] justify-around">
           <div>
-            <p className="text-[12px] font-[600]  mb-[10px] lg:mb-[24px] uppercase">
+            <p className="text-[12px] font-[600]  mb-[10px] md:mb-[24px] uppercase">
               collections
             </p>
             <div className="flex flex-col gap-2">
@@ -20,7 +20,7 @@ export default function Footer() {
             </div>
           </div>
           <div>
-            <p className="text-[12px] lg:text-[14px] font-[600]  mb-[10px] lg:mb-[24px] uppercase">
+            <p className="text-[12px] md:text-[14px] font-[600]  mb-[10px] md:mb-[24px] uppercase">
               learn
             </p>
             <div className="flex flex-col gap-3">
@@ -31,7 +31,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <p className="text-[12px] lg:text-[14px] font-[600]  mb-[10px] lg:mb-[24px] uppercase">
+            <p className="text-[12px] md:text-[14px] font-[600]  mb-[10px] md:mb-[24px] uppercase">
               customer service
             </p>
             <div className="flex flex-col gap-3">
@@ -44,7 +44,7 @@ export default function Footer() {
         </div>
         <div>
           <div className="mt-2">
-            <p className=" text-[12px] font-[600] lg:text-[14px] mb-[10px] lg:mb-[24px] uppercase">
+            <p className=" text-[12px] font-[600] md:text-[14px] mb-[10px] md:mb-[24px] uppercase">
               contact us
             </p>
             <div className="flex flex-col gap-3">

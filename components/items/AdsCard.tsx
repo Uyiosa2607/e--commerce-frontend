@@ -25,8 +25,8 @@ const collections = [
 
 export default function AdsCard(props: any) {
   return (
-    <section className="container px-[10px] mb-[100px] mt-[180px]">
-      <h4 className="font-semibold text-center text-[28px] mb-[40px]">
+    <section className="container px-[10px] mb-[100px] mt-40">
+      <h4 className="font-semibold text-center text-xl lg:text-2xl mb-8">
         {props.title}
       </h4>
       <div className="w-full grid grid-cols-2 lg:grid-cols-3 items-center justify-center">
@@ -41,12 +41,12 @@ export default function AdsCard(props: any) {
               alt={tea.desc}
             />
             <div className="flex flex-col capitalize font-light text-center text-[14px] py-1">
-              <span>{tea.name}</span>
-              <span>{tea.desc}</span>
-              <span className="mt-2">
+              <span className="text-sm font-normal">{tea.name}</span>
+              <span className="text-sm font-normal">{tea.desc}</span>
+              <div className="mt-2">
                 <b>{`$${tea.prize} `}</b>
-                /50g
-              </span>
+                <span className="font-semibold">/50g</span>
+              </div>
             </div>
           </div>
         ))}

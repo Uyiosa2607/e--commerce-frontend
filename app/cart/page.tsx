@@ -7,42 +7,48 @@ import Link from "next/link";
 export default function Proceed() {
   return (
     <main>
-      <div className="text-gray-500 container px-[10px] flex justify-between items-center uppercase text-[12px] lg:text-[16px]">
+      <div className="text-gray-500 container px-2 flex justify-between items-center uppercase text-xs lg:text-[16px]">
         <p>1. my bag</p>
         <div className="w-[150px] h-[1px] bg-gray-300"></div>
         <p>2. delivery</p>
         <div className="w-[150px] h-[1px] bg-gray-300"></div>
         <p>3. review & payment</p>
       </div>
-      <section className="container px-[10px] gap-[50px] flex flex-col lg:flex-row my-[40px]">
-        <div className="flex-1 text-[14px] flex flex-col gap-[38px]">
+      <section className="container px-2 gap-10 flex flex-col lg:flex-row my-4">
+        <div className="flex-1 text-sm flex flex-col gap-[38px]">
           {collections.map((tea) => (
             <div className="flex gap-[10px] items-center" key={tea.id}>
-              <img className="w-[71px] h-[71px]" src={tea.img} alt={tea.name} />
+              <img
+                className="w-11 h-11 md:w-[71px] md:h-[71px]"
+                src={tea.img}
+                alt={tea.name}
+              />
               <div className="flex justify-between w-[80%]">
                 <div className="flex flex-col gap-3">
-                  <p className="capitalize">ceylon ginger cinamon tea - 50g</p>
-                  <p className="uppercase text-[12px]">remove</p>
+                  <p className="capitalize text-xs md:text-sm font-normal">
+                    ceylon ginger cinamon tea - 50g
+                  </p>
+                  <p className="uppercase text-xs md:text-sm">remove</p>
                 </div>
-                <div className="flex flex-col gap-3">
+                <div className="flex flex-col gap-1">
                   <div className="flex items-center gap-3">
-                    <FaPlus />
-                    <span className="text-[15px] font-[600]">1</span>
-                    <FaMinus />
+                    <FaPlus size={10} />
+                    <span className="text-sm font-semibold">1</span>
+                    <FaMinus size={10} />
                   </div>
-                  <p className="text-center font-[600]">€{tea.prize}</p>
+                  <p className="text-center font-semibold">€{tea.prize}</p>
                 </div>
               </div>
             </div>
           ))}
           <div className="lg:w-[80%] bg-gray-300 h-[2px] mx-auto"></div>
-          <span className="lg:w-[90%] ml-[20px] mx-auto  flex items-center justify-between">
-            <p>Subtotal</p>
-            <p className="font-[600]">€3.90</p>
+          <span className="lg:w-[90%] ml-[20px] mx-auto text-sm font-medium flex items-center justify-between">
+            <p>Subtotal:</p>
+            <p className="font-[600]">&nbsp;€3.90</p>
           </span>
-          <span className="w-[90%] flex items-cneter justify-center">
+          <span className="w-full flex items-cneter justify-center">
             <Link href="/collection">
-              <button className="mx-auto text-center py-2 px-6 uppercase border-[1px] border-black">
+              <button className="mx-auto text-center font-medium text-xs py-2 px-6 uppercase border-2 border-black">
                 Back to shopping
               </button>
             </Link>

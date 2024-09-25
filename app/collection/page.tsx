@@ -283,7 +283,7 @@ export default function Collection() {
                     src={tea.img}
                     alt={tea.desc}
                   />
-                  <div className="flex flex-col capitalize font-light text-center text-[14px] py-1">
+                  <div className="flex flex-col capitalize font-normal text-center text-sm py-1">
                     <span>{tea.name}</span>
                     <span>{tea.desc}</span>
                     <span className="mt-2">

@@ -6,16 +6,16 @@ import Link from "next/link";
 export default function Complete() {
   return (
     <main className="text-[16px]">
-      <section className="container px-[10px]">
+      <section className="container pt-5 px-[10px]">
         <div className="mb-[30px]">
           <h2 className="uppercase font-[600] text-lg lg:text-[32px] mb-[12px]  text-center">
             thank you
           </h2>
-          <p className="text-center mb-[10px] lg:mb-[20px] lg:w-[50%] mx-auto">
+          <p className="text-center text-sm mb-10 font-normal md:mb-12 lg:w-[50%] mx-auto">
             We received your order and will start preparing your package right
             away. You will receive a confirmation email in a moment.
           </p>
-          <p className="text-center font-[600] uppercase text-[13px] lg:text-[18px]">
+          <p className="text-center font-[600] uppercase text-sm lg:text-base">
             Order details - 8972491047359
           </p>
         </div>
@@ -31,10 +31,12 @@ export default function Complete() {
                   />
                   <div className="flex justify-between w-[80%]">
                     <div className="flex flex-col gap-3">
-                      <p className="capitalize">ceylon ginger cinamon</p>
-                      <p className="text-[13px]">Chai tea - 50g</p>
+                      <p className="capitalize text-sm font-normal">
+                        ceylon ginger cinamon
+                      </p>
+                      <p className="text-sm font-normal">Chai tea - 50g</p>
                     </div>
-                    <p className="text-[13px] font-bold">€{tea.prize}</p>
+                    <p className="text-sm font-bold">€{tea.prize}</p>
                   </div>
                 </div>
               ))}
@@ -95,7 +97,7 @@ export default function Complete() {
                   <p className="font-[600]">€3.95</p>
                 </span>
               </div>
-              <div className="w-[80%] my-[20px] mx-auto bg-gray-300 h-[2px]"></div>
+              <div className="w-[80%] my-[20px] mx-auto bg-black h-[1px]"></div>
               <span className="flex items-center justify-between w-full">
                 <p className="capitalize font-[500]">Total</p>
                 <p className="font-[600]">€7.95</p>
@@ -105,12 +107,12 @@ export default function Complete() {
           <div className="flex-1">
             <div className="flex pt-[60px] items-center justify-center flex-col gap-[20px]">
               <Link href="/collection">
-                <button className="w-fit py-[10px] px-[24px] border-black border-[1px] mx-auto uppercase bg-black text-[14px] text-white">
+                <button className="w-fit py-[8px] px-[19px] border-black border-[1px] mx-auto uppercase bg-black text-sm text-white">
                   keep shopping
                 </button>
               </Link>
               <Link href="#">
-                <button className="w-fit py-[8px] px-[24px] uppercase mx-auto border-[1px] border-black">
+                <button className="w-fit py-[8px] px-[24px] text-sm uppercase mx-auto border-[1px] border-black">
                   print receipt
                 </button>
               </Link>
